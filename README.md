@@ -6,6 +6,17 @@ Projede **Singleton**, **Factory** ve **Observer** olmak üzere 3 temel GoF (Gan
 
 ---
 
+## 📋 Yapay Zeka Geliştirme Kuralları (rules.md)
+
+Projenin kök dizininde yer alan [rules.md] dosyası, bu proje üzerinde çalışan **yapay zeka kod asistanının uyması gereken katı mimari standartları ve iletişim kurallarını** belirler:
+* **Mimari Sınırlar:** Katmanlı mimarinin (`Presentation -> Application -> Domain`) katı sınırlarını çizerek bağımlılık yönlerini tek yönlü olarak tanımlar.
+* **Tasarım Desenlerinin Zorunluluğu:** Projede kullanılacak tasarım desenlerinin (Singleton, Factory, Observer) hangi dosyalarda ve ne şekilde uygulanacağını kurala bağlar.
+* **Kodlama Standartları:** Asistanın ürettiği tüm kod bloklarında Python **Type Hinting** (örn: `email: str`) kullanılmasını ve teorik açıklamalar yerine **Zincirleme Düşünce (Chain of Thought)** yöntemini kullanarak kodun mantığını adım adım açıklamasını şart koşar.
+
+Bu dosya sayesinde kod tabanı, yapay zekanın asiste ettiği geliştirme süreçlerinde dahi kalitesinden ve mimari prensiplerinden ödün vermeden güvenle ölçeklenebilir.
+
+---
+
 ## 🏗️ Mimari Tasarım (Layered Architecture)
 
 Proje, katmanlar arası bağımlılıkların kesinlikle tek yönlü (`Presentation -> Application -> Domain`) olduğu katı bir katmanlı mimari yapısına sahiptir:
